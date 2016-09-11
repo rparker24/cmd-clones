@@ -7,54 +7,116 @@
   </head>
   <body>
     <div class="main">
-      <h1>CSS versions of CMD and Git Bash on Windows 10</h1>
+      <h1>HTML + CSS versions of CMD and Git Bash on Windows 10</h1>
       <div class="image-div">
-				<h3>Screenshots (for comparison):</h3>
+				<h3>CMD Screenshot (for comparison):</h3>
         <img class="image" id="cmd-pic" src="./images/cmd.PNG" alt="command prompt screenshot" />
-        <img class="image" id="gb-pic" src="./images/gitbash.PNG" alt="Git Bash screenshot" />
       </div>
-			<br>
-			<br>
-      <div class="code">
-				<h3>HTML5 + CSS3:</h3>
-        <div class="clone" id="cmd">
-          <div class="window-head">
+			<h3>CMD in HTML5 + CSS3:</h3>
+      <div class="clone" id="cmd">
+        <div class="title-bar">
+					<div class="title-bar-left">
 						<img class="icon-small" id="cmd-icon-small" src="./images/cmd-icon-small.PNG" alt="CMD icon" />
 						<p class="title">
 							Command Prompt
 						</p>
-          </div>
-          <div class="inner">
-						<div class="scrollbar">
-							<div class="scroll-arrow" id="scroll-up">&#10094;</div>
-							<div class="scroll-block"></div>
-							<div class="scroll-arrow" id="scroll-down">&#10094;</div>
+					</div>
+					<div class="title-bar-right">
+						<div class="title-bar-btn minimize">
+							&#9866;
 						</div>
-						<p class="text">
-							ipsum ipsum ipsum
-						</p>
-          </div>
+						<div class="title-bar-btn maximize">
+							&#9744;
+						</div>
+						<div class="title-bar-btn close">
+							&#10005;
+						</div>
+					</div>
         </div>
-				<br>
-				<div class="clone" id="gitbash">
-					<div class="window-head">
-						<!-- <img class="icon-small" id="cmd-icon-small" src="./images/cmd-icon-small.PNG" alt="CMD icon" /> -->
+        <div class="inner">
+					<div class="scrollbar">
+						<div class="scroll-arrow" id="scroll-up">&#10094;</div>
+						<div class="scroll-block"></div>
+						<div class="scroll-arrow" id="scroll-down">&#10094;</div>
+					</div>
+					<p class="cmd-text">
+						where <<span>command</span>> is one of:
+					</p>
+					<p class="cmd-text" id="commands">
+  clean, config, dedupe, deinstall, delete, dev, develop, disable, docs,<br>
+  enable, erase, featured, home, i, init, install, link, linked, links, list,<br>
+  ln, lns, login, ls, open, outdated, publish, rebuild, rebuild-module-cache,<br>
+  remove, rm, search, show, star, starred, stars, test, uninstall, unlink,<br>
+  unpublish, unstar, update, upgrade, view.
+					</p>
+					<br>
+					<p class="cmd-text">
+						Run `apm help <<span>command</span>>` to see the more details about a specific command.
+					</p>
+					<br>
+					<p class="cmd-text">
+						Options:
+					</p>
+					<p class="cmd-text" id="options-list">
+						--color<span class="blackspace">        </span>Enable colored output<span class="blackspace">                                   </span>[boolean] [default: true]<br>
+-v, --version<span class="blackspace">  </span>Print the apm version<br>
+-h, --help<span class="blackspace">     </span>Print this usage message<br><br>
+Prefix an option with `no-` to set it to false such as --no-color to disable<br>
+colored output.
+					</p>
+					<br>
+					<p class="cmd-text" id="apm-update">
+						C:\Users\Robert>apm update<br>
+<span class="blue-text">Package Updates Available</span> (1)<br>
+└── <span class="yellow-text">nuclide</span> <span class="red-text">0.167.0</span> -> <span class="green-text">0.167.1</span><br><br>
+Would you like to install these updates? (yes) y<br><br>
+Installing nuclide@0.167.1 to C:\Users\Robert\.atom\packages <span class="red-text">failed</span><br>
+<span class="red-text">EPERM: operation not permitted, unlink 'C:\Users\Robert\.atom\packages\nuclide\pkg\nuclide-node-transpiler\lib\NodeTranspiler.js'</span><br><br>
+C:\Users\Robert>
+					</p>
+        </div>
+      </div>
+			<br>
+			<h4>Don't believe it? <a href="javascript: window.location='view-source:' + window.location.href">View Source</a></h4>
+			<br>
+			<div class="image-div">
+				<h3>Git Bash Screenshot (for comparison):</h3>
+        <img class="image" id="gb-pic" src="./images/gitbash.PNG" alt="Git Bash screenshot" />
+			</div>
+			<h3>Git Bash in HTML5 + CSS3:</h3>
+			<br>
+			<div class="clone" id="gitbash">
+				<div class="title-bar">
+					<!-- <img class="icon-small" id="cmd-icon-small" src="./images/cmd-icon-small.PNG" alt="Git Bash icon" /> -->
+					<div class="title-bar-left">
 						<p class="title">
 							&#10070;  Git Bash
 						</p>
 					</div>
-					<div class="inner">
-						<div class="scrollbar">
-							<div class="scroll-arrow" id="scroll-up">&#10094;</div>
-							<div class="scroll-block"></div>
-							<div class="scroll-arrow" id="scroll-down">&#10094;</div>
+					<div class="title-bar-right">
+						<div class="title-bar-btn minimize">
+							&#9866;
 						</div>
-						<p class="text">
-							ipsum ipsum ipsum
-						</p>
+						<div class="title-bar-btn maximize">
+							&#9744;
+						</div>
+						<div class="title-bar-btn close">
+							&#10005;
+						</div>
 					</div>
 				</div>
-      </div>
+				<div class="inner">
+					<div class="scrollbar">
+						<div class="scroll-arrow" id="scroll-up">&#10094;</div>
+						<div class="scroll-block"></div>
+						<div class="scroll-arrow" id="scroll-down">&#10094;</div>
+					</div>
+					<p class="cmd-text">
+						ipsum ipsum ipsum
+					</p>
+				</div>
+			</div>
+			<h4>Don't believe it? <a href="javascript: window.location='view-source:' + window.location.href">View Source</a></h4>
     </div>
 		<footer>
 			<p></p>

@@ -25,23 +25,47 @@ body {
 	height: 400px;
 }
 
-.window-head {
+.title-bar {
 	height: 30px;
 	background-color: white;
 }
 
-.icon-small {
+.title-bar-left {
 	float: left;
-	margin: 9px 0 0 9px;
+	margin: 6px 0 0 8px;
+}
+
+.icon-small {
+	/*margin: 9px 0 0 9px;*/
 }
 
 .title {
-	display: inline-block;
+	display: inline;
 	color: black;
-	float: left;
 	font-family: "Segoe UI", Frutiger, "Frutiger Linotype", "Dejavu Sans", "Helvetica Neue", Arial, sans-serif;
-	margin: 6px 0 0 10px;
 	font-size: 12.2px;
+	font-weight: 500;
+}
+
+.title-bar-right {
+	float: right;
+	height: 30px;
+}
+
+.title-bar-btn {
+	display: inline-block;
+	width: 45px;
+	height: 29px;
+	margin-left: -3px;
+}
+
+.minimize:hover, .maximize:hover {
+	background-color: #cdcdcd;
+}
+
+.close:hover {
+	color: #fff;
+	background-color: #e81123;
 }
 
 .inner {
@@ -75,6 +99,12 @@ body {
 	font-size: small;
 	font-weight: bold;
 	padding-bottom: 1px;
+	width: 17px;
+}
+
+.scroll-arrow:hover {
+	color: #000;
+	background-color: #cdcdcd;
 }
 
 #scroll-up {
@@ -88,21 +118,49 @@ body {
 }
 
 #scroll-down {
-	bottom: 0;
 	color: #666;
 	-webkit-transform: rotate(270deg);
 	-moz-transform: rotate(270deg);
 	-o-transform: rotate(270deg);
 	-ms-transform: rotate(270deg);
 	transform: rotate(270deg);
+	position: absolute;
+	bottom: 0;
 }
 
-.text {
+.cmd-text {
 	color: #c0c0c0;
-	font-size: 16px;
+	font-size: 14.5px;
 	font-family: Consolas, monaco, monospace;
-	float: left;
-	left: 0;
+	line-height: 15px;
+	text-align: left;
+	-webkit-margin-before: 0;
+	-webkit-margin-after: 0;
+	font-weight: lighter;
+}
+
+.blackspace {
+	white-space: pre;
+}
+
+#commands, #options-list {
+	margin-left: 32px;
+}
+
+.blue-text {
+	color: #006e80;
+}
+
+.yellow-text {
+	color: #808000;
+}
+
+.red-text {
+	color: #800000;
+}
+
+.green-text {
+	color: #008000;
 }
 
 footer {
