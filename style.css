@@ -188,6 +188,16 @@ body {
 	color: #00bfa4;
 }
 
+.cursor {
+  animation: blinker 1s linear infinite;
+	/*font-weight: bold;*/
+	font-size: 15px;
+}
+
+@keyframes blinker {
+  50% { opacity: 0.0; }
+}
+
 footer {
 	height: 20px;
 }
